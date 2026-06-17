@@ -31,7 +31,7 @@ export class ReproStack extends Stack {
     const api = new HttpApi(this, 'HttpApi', {
       corsPreflight: {
         allowOrigins: ['http://localhost:5173'],
-        allowMethods: [CorsHttpMethod.GET, CorsHttpMethod.OPTIONS],
+        allowMethods: [CorsHttpMethod.GET ],
         allowHeaders: ['authorization', 'content-type'],
       },
     });

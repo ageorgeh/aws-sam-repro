@@ -33,7 +33,6 @@ export const handler: APIGatewayProxyHandlerV2 | ((
       statusCode: 200,
       headers: {
         'content-type': 'application/json',
-        'access-control-allow-origin': 'http://localhost:5173',
       },
       body: JSON.stringify({ ok: true }),
     };
